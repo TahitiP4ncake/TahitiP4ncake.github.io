@@ -1,0 +1,278 @@
+* {	
+	font-family: 'Rubik', sans-serif;
+	margin:0;
+	padding:0;
+	border:0px;
+	outline:none;
+}
+
+.maintitle
+{
+	
+}
+
+.maintitle a 
+{
+	text-decoration: none;
+	font-size:3vw;
+	color:rgb(130,130,130);
+	font-weight:500;
+}
+
+.contact 
+{
+	font-weight:400;
+	font-size:1.5vw;
+	color:rgb(130,130,130);
+
+		}
+	.contact a 
+	{
+		text-decoration: none;
+		font-size:1.5vw;
+	}
+	.links
+		{
+				text-decoration: none;
+				color:rgb(200,100,100);
+				font-weight:500;
+		}
+	nav		
+		{
+			/* display:flex; */
+			/* justify-content:center; */
+			padding:5px;
+			margin:10px;
+			margin-bottom:5px;
+			padding-bottom:0;
+			color:rgb(200,100,100);
+			font-weight:500;
+			font-size:2vw;
+		}
+	nav a
+		{
+			color:rgb(200,100,100);
+			text-decoration: none;
+		}
+	body, html{height:100%;}
+
+
+	body
+		{
+			text-align:center;
+			margin:0;
+			background-color: rgb(250,250,255);
+			font-family:'Rubik';
+		}
+	.perso
+		{
+			font-size:1.5vw;
+			color:rgb(130,130,130);
+			margin-bottom:10px;
+		}
+	.maincontent
+		{
+		
+		}
+	
+	.jeux 
+		{
+		
+			font-size:1vw;
+			color:rgb(130,130,130);
+			font-weight:400;
+			
+			/* padding-top:1%; */
+			margin-left:20%;
+			margin-right:20%;
+			padding-bottom:1%;
+			/* width:60%; */
+			
+			/*background-color:rgb(250,250,255);*/
+		}
+	.descriptionL
+		{
+			display:block;
+			flex-basis: 100%;
+			flex-flow:row wrap;
+			justify-content:center;
+			align-content:center-top;
+			background-color:rgb(250,250,255);
+			margin:.5%;
+			width=50%;
+			
+			
+		}
+	.people
+	{
+		text-decoration:none;
+		font-size:1vw; 
+			 color:rgb(130,130,130); 
+	}
+	.travail
+	{
+		margin-top:2%;
+		font-size:1.5vw;
+		color:rgb(200,100,100);
+		font-weight:500;
+		
+	}
+	.gamename 
+		 { 
+			text-decoration:none;
+			 font-size:1vw; 
+			 color:rgb(130,130,130); 
+			 font-weight:500; 
+			 padding-right:1%;
+		 } 
+	.itchL 
+		{
+
+			text-decoration:none;
+			font-size:1vw; 
+			 color:rgb(200,100,100); 
+			 font-weight:500;
+			 display:block;
+			padding-right:30%;
+			padding-left:30%;
+
+		}
+	.jeux a img[src="images//games/vr1.gif"]
+		{
+			width:100%; 
+			height: auto;
+		}
+	.titre
+		{
+		display:flex;
+		text-align:left-side;
+		padding-left:20%;	
+		padding-top:5%;
+		padding-bottom:2%;
+		font-size:3.5vw;
+		font-weight:400;
+		color:rgb(200,100,100);
+		/*color:rgb(130,130,130);*/
+		}
+	.troidage
+		{
+		
+		margin-left:20%;
+			margin-right:20%;
+			padding-bottom:1%;
+		
+		/* align-content:center; */
+		}
+	.images 
+		{
+		display:flex;
+		flex-flow:row nowrap;
+		justify-content:space-around;
+		
+		/*justify-content:space-around;*/
+		}
+	.descriptionL a img
+		{
+			
+			width:100%; 
+			height: auto;
+		}
+		/*.descriptionL a img[src="images//3D/tank.png"]
+		{
+			width:10%; 
+			height: auto;
+		}
+		*/
+
+	
+	footer
+		{
+			
+			background-color:rgb(220,210,210);
+			position:absolute center;
+			bottom:0;
+			width:100%;
+			padding-top:50px;
+			height:30px;
+			color:rgb(130,100,100);
+			/* background-color: rgb(10,10,10); */
+		}
+	
+	.corp
+		{
+			max-width:57%;
+		min-height:100%;
+		margin:0 auto;
+		position:relative;
+
+			/* margin:auto; */
+			background-color: rgb(230,220,220);
+			/* width:60%; */
+			/* padding:40px */
+		}
+		a span
+		{
+			color:rgb(200,100,100);
+		}
+		
+@media screen and (max-width: 920px) {
+  .corp 
+  {
+    max-width:100%;
+	
+  }
+  .jeux 
+  {
+	  font-size:3vw;
+  }
+  .gamename
+  {
+	  font-size:3vw;
+  }
+  .itchL
+  {
+	  
+	  font-size:3vw;
+  }
+  .maintitle a
+  {
+	  font-size:4.5vw;
+  }
+  .contact
+  {
+	  font-size:2.5vw;
+  }
+  .contact a 
+  {
+	  font-size:2.5vw;
+  }
+  nav 
+  {
+	  font-size:3.5vw;
+  }
+  .perso
+  {
+	  font-size:2vw;
+  }
+  .travail
+  {
+	  font-size:2vw;
+	  max-width:57%;
+	  margin:auto;
+	  
+  }
+}
+ @media screen and (max-width: 600px) {
+  .corp 
+  {
+    max-width:100%;
+	display : block;
+	
+  }
+  
+  .images
+  {
+	  display: block;
+  }
+  
+}
