@@ -112,4 +112,41 @@ footer
 	font-size:1vw;
 }
 
+/* hover animations*/
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:rgb(20,20,20);
+  opacity:.3;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+
+	text-decoration:none;
+  color: white;
+  font-size: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
