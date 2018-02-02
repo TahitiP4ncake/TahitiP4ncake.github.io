@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/gamestyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="keywords" content="portfolio,game,art,tymus,dorian,beaugendre">
+		<meta name="author" content="dorian beaugendre">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="dorian beaugendre game art portoflio">
+		<title> game page </title>
+</head>
+
+
+<body>
+	<div class="maintitle">
+		<a href="menu.html" >
+			DORIAN BEAUGENDRE 
+		</a> 
+	</div>
+
+	<div class="infos">
+
+		<div class="slideshow">
+			<div class="boutons">
+
+				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+
+				<img class="images" src="images/hiloqo/hyper1.png">
+				<img class="images" src="images/hiloqo/message1.png">
+				<img class="images" src="images/hiloqo/message2.png">
+
+
+				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		</div>
+
+		<div class = "description">
+			<div class="titre">
+				h i l o q o 
+			</div>
+
+			<a class="links" href ="http://hiloqo.itch.io" target="_blank" > itch </a>
+			<a class="links" href ="https://twitter.com/hiloqoco" target="_blank" > twitter </a>
+
+			<div class="pitch">
+				h i l o q o is an indie video game collective composed of <a class="contact" href ="https://twitter.com/CreaGame" target="_blank" > Baptiste Billet </a>,  <a class="contact" href ="https://twitter.com/nalhue_" target="_blank" > Corinne Fenoglio </a>, 
+				<a class="contact" href ="https://twitter.com/Chouq_i" target="_blank" > Ines Jerome </a>, <a class="contact" href ="https://twitter.com/LeOrangeSheep" target="_blank" > Henri Couvreur </a> and myself
+				</br>
+				</br>
+
+				
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		dorian beaugendre© 2018
+	</footer>
+</body>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("images");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "flex";  
+}
+</script>
+
+</html>

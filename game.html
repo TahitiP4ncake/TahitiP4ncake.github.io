@@ -12,18 +12,35 @@
 		<title> game page </title>
 </head>
 
+
 <body>
 	<div class="maintitle">
 		<a href="menu.html" >
 			DORIAN BEAUGENDRE 
-		</a>   <!-- Nom du site -->
+		</a> 
 	</div>
 
 	<div class="infos">
 
-		<img src="images/game2.png" title="game" alt ="game" />
+		<div class="slideshow">
+			<div class="boutons">
+
+				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+
+				<img class="images" src="images/1.png">
+				<img class="images" src="images/2.png">
+				<img class="images" src="images/3.png">
+				<img class="images" src="images/4.png">
+
+				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		</div>
 
 		<div class = "description">
+			<div class="titre">
+				TITRE
+			</div>
+
 			<a class="links" href ="http://tymus.itch.io" target="_blank" > itch </a>
 			<a class="links" href ="https://twitter.com/TahitiP4ncake" target="_blank" > twitter </a>
 
@@ -39,8 +56,31 @@
 			</div>
 		</div>
 	</div>
+
 	<footer>
 		dorian beaugendre© 2018
 	</footer>
 </body>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("images");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "flex";  
+}
+</script>
+
 </html>
